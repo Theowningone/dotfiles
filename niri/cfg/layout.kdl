@@ -1,0 +1,33 @@
+    layout {
+        shadow {
+            on
+        }
+
+        gaps 8 // Gap between windows
+        default-column-display "normal"
+        center-focused-column "never" // Don’t auto-center focused column
+
+        background-color "transparent" // <- needed for noctalia-shell to set wallpaper
+
+        preset-column-widths {
+            proportion 0.33333
+            proportion 0.5
+            proportion 0.66667
+        }
+
+        tab-indicator {
+            hide-when-single-tab
+            place-within-column
+            corner-radius 4
+            width 10
+            length total-proportion=1.0
+            gap 4
+            gaps-between-tabs 2
+        }
+
+        focus-ring {
+            width 2
+        }
+
+        struts {}
+    }

@@ -1,0 +1,3 @@
+stores:
+    niri:
+        target: ~/.config/niri
