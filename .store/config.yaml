@@ -1,3 +1,5 @@
 stores:
     niri:
         target: ~/.config/niri
+    noctalia:
+        target: ~/.config/noctalia
