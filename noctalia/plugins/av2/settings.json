@@ -1,0 +1,11 @@
+{
+  "hideWhenIdle": true,
+  "width": 150,
+  "device": "VAIO Media",
+  "rotationInterval": 5000,
+  "height": 200,
+  "visualizerType": "linear",
+  "colorName": "primary",
+  "showBackground": true,
+  "roundedCorners": false
+}

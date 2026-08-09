@@ -1,0 +1,31 @@
+{
+  "id": "av2",
+  "name": "AV 2",
+  "version": "1.0.0",
+  "minNoctaliaVersion": "3.6.0",
+  "author": "Theowningone",
+  "license": "MIT",
+  "repository": "https://github.com/Theowningone/noctalia-plugins",
+  "description": "Display time from multiple timezones around the world with automatic rotation.",
+  "entryPoints": {
+    "main": "Main.qml",
+    "barWidget": "BarWidget.qml",
+    "settings": "Settings.qml"
+  },
+  "dependencies": {
+    "plugins": []
+  },
+  "metadata": {
+    "defaultSettings": {
+      "hideWhenIdle": false,
+      "width": 200,
+      "device": null,
+      "rotationInterval": 5000,
+      "height": 200,
+      "visualizerType": "linear",
+      "colorName": "primary",
+      "showBackground": false,
+      "roundedCorners": false
+    }
+  }
+}

@@ -1,4 +1,8 @@
 stores:
+    fastfetch:
+        target: ~/.config/fastfetch
+    ghostty:
+        target: ~/.config/ghostty
     niri:
         target: ~/.config/niri
     noctalia:

@@ -82,17 +82,6 @@
         "widgetSpacing": 6,
         "widgets": {
             "center": [
-                {
-                    "colorizeIcons": false,
-                    "hideMode": "hidden",
-                    "id": "ActiveWindow",
-                    "maxWidth": 1450,
-                    "scrollingMode": "hover",
-                    "showIcon": true,
-                    "showText": true,
-                    "textColor": "none",
-                    "useFixedWidth": false
-                }
             ],
             "left": [
                 {
@@ -100,7 +89,7 @@
                     "colorizeSystemText": "none",
                     "customIconPath": "",
                     "enableColorization": false,
-                    "icon": "rocket",
+                    "icon": "grid-dots",
                     "iconColor": "none",
                     "id": "Launcher",
                     "useDistroLogo": false
@@ -119,7 +108,7 @@
                     "diskPath": "/",
                     "iconColor": "none",
                     "id": "SystemMonitor",
-                    "showCpuCores": true,
+                    "showCpuCores": false,
                     "showCpuFreq": false,
                     "showCpuTemp": true,
                     "showCpuUsage": true,
@@ -191,9 +180,34 @@
                     "showBadge": true,
                     "showLabelsOnlyWhenOccupied": true,
                     "unfocusedIconsOpacity": 1
+                },
+                {
+                    "colorizeIcons": false,
+                    "hideMode": "hidden",
+                    "id": "ActiveWindow",
+                    "maxWidth": 900,
+                    "scrollingMode": "hover",
+                    "showIcon": true,
+                    "showText": true,
+                    "textColor": "none",
+                    "useFixedWidth": false
                 }
             ],
             "right": [
+                {
+                    "defaultSettings": {
+                        "colorName": "primary",
+                        "device": null,
+                        "height": 200,
+                        "hideWhenIdle": false,
+                        "rotationInterval": 5000,
+                        "roundedCorners": false,
+                        "showBackground": false,
+                        "visualizerType": "linear",
+                        "width": 200
+                    },
+                    "id": "plugin:av2"
+                },
                 {
                     "compactMode": false,
                     "hideMode": "hidden",
@@ -232,6 +246,23 @@
                     ]
                 },
                 {
+                    "defaultSettings": {
+                        "autoMount": false,
+                        "fileBrowser": "yazi",
+                        "hideWhenEmpty": false,
+                        "iconColor": "none",
+                        "showBadge": false,
+                        "showNotifications": true,
+                        "terminalCommand": "kitty"
+                    },
+                    "id": "plugin:usb-drive-manager"
+                },
+                {
+                    "defaultSettings": {
+                    },
+                    "id": "plugin:kde-connect"
+                },
+                {
                     "hideWhenZero": false,
                     "hideWhenZeroUnread": false,
                     "iconColor": "none",
@@ -267,10 +298,23 @@
                 },
                 {
                     "defaultSettings": {
-                        "precision": 8,
-                        "showBarValue": true
+                        "autoPaste": false,
+                        "autoPasteDelay": 300,
+                        "autoPasteOnRightClick": false,
+                        "cardColors": {
+                        },
+                        "customColors": {
+                        },
+                        "enableTodoIntegration": false,
+                        "fullscreenMode": false,
+                        "hidePanelBackground": false,
+                        "notecardsEnabled": true,
+                        "panelHeight": 0,
+                        "panelWidth": 1450,
+                        "pincardsEnabled": true,
+                        "showCloseButton": true
                     },
-                    "id": "plugin:noctalia-calculator"
+                    "id": "plugin:clipper"
                 },
                 {
                     "colorizeDistroLogo": false,
@@ -364,14 +408,24 @@
                 }
             ],
             "right": [
+                {
+                    "defaultSettings": {
+                    },
+                    "id": "plugin:kde-connect"
+                }
             ]
         }
     },
     "desktopWidgets": {
-        "enabled": false,
+        "enabled": true,
         "gridSnap": false,
         "gridSnapScale": false,
         "monitorWidgets": [
+            {
+                "name": "DP-2",
+                "widgets": [
+                ]
+            }
         ],
         "overviewEnabled": true
     },
@@ -382,7 +436,7 @@
         "deadOpacity": 0.6,
         "displayMode": "auto_hide",
         "dockType": "floating",
-        "enabled": true,
+        "enabled": false,
         "floatingRatio": 1,
         "groupApps": false,
         "groupClickAction": "cycle",
@@ -504,7 +558,7 @@
         "autoLocate": false,
         "firstDayOfWeek": -1,
         "hideWeatherCityName": true,
-        "hideWeatherTimezone": false,
+        "hideWeatherTimezone": true,
         "name": "Lancaster",
         "showCalendarEvents": true,
         "showCalendarWeather": true,
@@ -539,7 +593,7 @@
         "disableWallpaper": true
     },
     "notifications": {
-        "backgroundOpacity": 0.9,
+        "backgroundOpacity": 0.75,
         "clearDismissed": true,
         "criticalUrgencyDuration": 15,
         "density": "default",
@@ -716,6 +770,10 @@
             {
                 "enabled": true,
                 "id": "qt"
+            },
+            {
+                "enabled": true,
+                "id": "cava"
             }
         ],
         "enableUserTheming": true

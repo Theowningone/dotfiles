@@ -1,4 +1,6 @@
 // ────────────── Startup Applications ──────────────
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Miscellaneous#spawn-sh-at-startup
 
+    spawn-at-startup "wl-paste" "--watch" "cliphist" "store"
+    spawn-sh-at-startup "ghostty --gtk-single-instance=true --quit-after-last-window-closed=false --initial-window=false"
     spawn-sh-at-startup "qs -c noctalia-shell"

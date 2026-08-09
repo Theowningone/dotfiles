@@ -1,0 +1,43 @@
+{
+  "id": "wc",
+  "name": "World Clock 2",
+  "version": "1.0.5",
+  "minNoctaliaVersion": "3.6.0",
+  "author": "Theowningone",
+  "license": "MIT",
+  "repository": "https://github.com/Theowningone/noctalia-plugins",
+  "description": "Display time from multiple timezones around the world with automatic rotation.",
+  "entryPoints": {
+    "main": "Main.qml",
+    "barWidget": "BarWidget.qml",
+    "settings": "Settings.qml",
+    "panel": "Panel.qml"
+  },
+  "dependencies": {
+    "plugins": []
+  },
+  "metadata": {
+    "defaultSettings": {
+      "timezones": [
+        {
+          "name": "New York",
+          "timezone": "America/New_York",
+          "enabled": true
+        },
+        {
+          "name": "London",
+          "timezone": "Europe/London",
+          "enabled": true
+        },
+        {
+          "name": "Tokyo",
+          "timezone": "Asia/Tokyo",
+          "enabled": true
+        }
+      ],
+      "rotationInterval": 5000,
+      "showDate": true,
+      "timeFormat": "HH:mm"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "iconType": "chevron",
+  "byteThresholdActive": 1000000,
+  "fontSizeModifier": 0.75,
+  "iconSizeModifier": 1,
+  "useCustomColors": false,
+  "useCustomFont": false,
+  "customFontBold": false,
+  "customFontItalic": false,
+  "columnSpacing": 0,
+  "rowSpacing": -8,
+  "paddingLeft": 5,
+  "paddingRight": 0,
+  "layout": "vertical",
+  "slots": [
+    "txSpeed",
+    "txIcon",
+    "rxSpeed",
+    "rxIcon"
+  ],
+  "customFontFamily": ""
+}

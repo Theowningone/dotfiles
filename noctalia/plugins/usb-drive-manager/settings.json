@@ -1,0 +1,9 @@
+{
+  "autoMount": false,
+  "fileBrowser": "dolphin",
+  "terminalCommand": "alacritty",
+  "showNotifications": true,
+  "hideWhenEmpty": true,
+  "showBadge": true,
+  "iconColor": "none"
+}
