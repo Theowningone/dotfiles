@@ -42,3 +42,8 @@ output_path = '~/.config/Kvantum/matugen/matugen.kvconfig'
 [templates.kvantum_svg]
 input_path = '~/.config/noctalia/templates/kvantum/kvantum-colors.svg'
 output_path = '~/.config/Kvantum/matugen/matugen.svg'
+
+# [templates.cursor]
+# input_path = "~/.config/noctalia/templates/cursor/colors.json"
+# output_path = "~/.config/noctalia/templates/cursor/colors_filled.json"
+# post_hook = "~/.config/noctalia/templates/cursor/cursor_matugen.sh"

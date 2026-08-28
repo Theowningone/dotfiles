@@ -8,4 +8,4 @@ include "./cfg/rules.kdl"
 include "./cfg/misc.kdl"
 
 include "./noctalia.kdl"
-
+// include "./bibata_cursor.kdl"

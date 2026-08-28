@@ -7,3 +7,5 @@ stores:
         target: ~/.config/niri
     noctalia:
         target: ~/.config/noctalia
+    wireplumber:
+        target: ~/.config/wireplumber

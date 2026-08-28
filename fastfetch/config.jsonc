@@ -68,7 +68,8 @@
     "percent": {
       "type": [
         "num",
-        "num-color"
+        "num-color",
+        "bar"
       ],
       "ndigits": 0,
       "color": {
@@ -142,8 +143,15 @@
             "hideType": "integrated",
             "format": "{vendor} {name} {dedicated-total}"
         },
+        // {
+        //     "type": "memory",
+        //     "key": "│ ├󰑭 ",
+        //     "keyColor": "green",
+        //     "format": "{used} / {total} {percentage-bar}"
+        // },
         {
-            "type": "memory",
+            "type": "custom",
+            "format": "2x 32GB G.SKILL Flare X5 @ 6000MT/s",
             "key": "│ ├󰑭 ",
             "keyColor": "green"
         },
@@ -151,9 +159,8 @@
             "type": "disk",
             "key": "│ ├󰋊 ",
             "keyColor": "green",
-            "format": "{size-total} {size-percentage-bar}({size-percentage}) - {filesystem} {?is-readonly}[ro]{?}"
+            "format": "{name>5} [{size-total>5}] {size-percentage-bar} - {filesystem<5} {?is-readonly}[ro]{?}"
         },
-
         {
             "type": "custom",
             "format": "3x 27\" 1920x1080 @ 60Hz",

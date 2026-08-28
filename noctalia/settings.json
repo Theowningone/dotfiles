@@ -95,9 +95,36 @@
                     "useDistroLogo": false
                 },
                 {
+                    "defaultSettings": {
+                        "barWidgetTz": "",
+                        "highlightWorkHours": true,
+                        "hoursAfter": 21,
+                        "hoursBefore": 3,
+                        "panelSize": 100,
+                        "timeFormat": "24h",
+                        "timezones": [
+                            {
+                                "label": "New York",
+                                "tz": "America/New_York"
+                            },
+                            {
+                                "label": "London",
+                                "tz": "Europe/London"
+                            },
+                            {
+                                "label": "Tokyo",
+                                "tz": "Asia/Tokyo"
+                            }
+                        ],
+                        "workHourEnd": 17,
+                        "workHourStart": 9
+                    },
+                    "id": "plugin:timezone-hub"
+                },
+                {
                     "clockColor": "none",
                     "customFont": "",
-                    "formatHorizontal": "h:mm AP ddd, MMM dd",
+                    "formatHorizontal": "ddd, MMM dd",
                     "formatVertical": "HH mm - dd MM",
                     "id": "Clock",
                     "tooltipFormat": "HH:mm ddd, MMM dd",
@@ -170,13 +197,13 @@
                     "fontWeight": "bold",
                     "groupedBorderOpacity": 1,
                     "hideUnoccupied": false,
-                    "iconScale": 0.8,
+                    "iconScale": 0.7,
                     "id": "Workspace",
                     "labelMode": "index",
                     "occupiedColor": "secondary",
                     "pillSize": 0.6,
                     "showApplications": false,
-                    "showApplicationsHover": false,
+                    "showApplicationsHover": true,
                     "showBadge": true,
                     "showLabelsOnlyWhenOccupied": true,
                     "unfocusedIconsOpacity": 1
@@ -256,11 +283,6 @@
                         "terminalCommand": "kitty"
                     },
                     "id": "plugin:usb-drive-manager"
-                },
-                {
-                    "defaultSettings": {
-                    },
-                    "id": "plugin:kde-connect"
                 },
                 {
                     "hideWhenZero": false,
@@ -354,7 +376,7 @@
     },
     "colorSchemes": {
         "darkMode": true,
-        "generationMethod": "rainbow",
+        "generationMethod": "tonal-spot",
         "manualSunrise": "06:30",
         "manualSunset": "18:30",
         "monitorForColors": "",
@@ -408,11 +430,6 @@
                 }
             ],
             "right": [
-                {
-                    "defaultSettings": {
-                    },
-                    "id": "plugin:kde-connect"
-                }
             ]
         }
     },
@@ -621,7 +638,7 @@
             "lowSoundFile": "",
             "normalSoundFile": "",
             "separateSounds": false,
-            "volume": 0.5
+            "volume": 0.52
         }
     },
     "osd": {

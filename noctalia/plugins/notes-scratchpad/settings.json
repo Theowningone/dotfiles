@@ -1,10 +1,10 @@
 {
-  "scratchpadContent": "Panoramix\nRestrict advisor select\nAdvisor reconciliation\nRMD wrong owner\nIPX Commissions file verification",
+  "scratchpadContent": "Appt Freqquency 500 error\nLast Appt month filter\nAnd also include the Managed assets column to V3 report\n\nQueue Worker\n\nIncome CRUD\nRMD wrong owner\nRMD Job + UI\n\nWe pull schwab\nIPX sends to us\n\nPanoramix SFTP",
   "panelWidth": 600,
   "panelHeight": 400,
   "fontSize": 14,
-  "cursorPosition": 72,
+  "cursorPosition": 118,
   "scrollPositionX": 0,
-  "scrollPositionY": 0.5357142857142857,
+  "scrollPositionY": 0,
   "filePath": ""
 }

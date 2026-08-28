@@ -1,0 +1,32 @@
+{
+  "timezones": [
+    {
+      "tz": "America/New_York",
+      "label": "New York"
+    },
+    {
+      "tz": "America/Anchorage",
+      "label": "Anchorage"
+    },
+    {
+      "tz": "Australia/Queensland",
+      "label": "Queensland"
+    },
+    {
+      "tz": "Europe/London",
+      "label": "London"
+    },
+    {
+      "tz": "UTC",
+      "label": "UTC"
+    }
+  ],
+  "timeFormat": "24h",
+  "hoursBefore": 3,
+  "hoursAfter": 21,
+  "workHourStart": 9,
+  "workHourEnd": 17,
+  "highlightWorkHours": true,
+  "panelSize": 100,
+  "barWidgetTz": ""
+}

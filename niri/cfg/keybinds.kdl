@@ -44,7 +44,6 @@ binds {
     Mod+WheelScrollUp                   cooldown-ms=150 { focus-window-or-workspace-up; }
     Mod+WheelScrollDown                 cooldown-ms=150 { focus-window-or-workspace-down; }
     Mod+MouseMiddle                     { switch-focus-between-floating-and-tiling; }
-    Mod+F10                             { set-dynamic-cast-window; }
 
     Mod+Ctrl+Left                       { move-column-left; }
     Mod+Ctrl+Right                      { move-column-right; }
@@ -55,7 +54,6 @@ binds {
     Mod+Ctrl+WheelScrollUp              cooldown-ms=150 { move-column-to-workspace-up; }
     Mod+Ctrl+WheelScrollDown            cooldown-ms=150 { move-column-to-workspace-down; }
     Mod+Ctrl+MouseMiddle                { toggle-window-floating; }
-    Mod+Ctrl+F10                        { set-dynamic-cast-monitor; }
 
     Mod+Alt+Left                        { set-column-width "-10%"; }
     Mod+Alt+Right                       { set-column-width "+10%"; }
@@ -76,7 +74,13 @@ binds {
     Mod+Ctrl+Alt+WheelScrollRight       { move-column-to-monitor-right; }
     Mod+Ctrl+Alt+WheelScrollUp          cooldown-ms=150 { move-column-to-workspace-up; }
     Mod+Ctrl+Alt+WheelScrollDown        cooldown-ms=150 { move-column-to-workspace-down; }
-    Mod+Ctrl+Alt+F10                    { clear-dynamic-cast-target; }
+
+    Mod+F10                             { set-dynamic-cast-window; }
+    Mod+Ctrl+F10                        { set-dynamic-cast-monitor; }
+    Mod+Shift+F10                       { clear-dynamic-cast-target; }
+
+    Mod+Grave                           allow-when-locked=true { spawn-sh "qs -c noctalia-shell ipc call wallpaper random"; }
+    Mod+Escape                          { spawn-sh "qs -c noctalia-shell ipc call notifications dismissAll"; }
 
     Mod+Shift+Alt+WheelScrollLeft       { switch-preset-column-width-back; }
     Mod+Shift+Alt+WheelScrollRight      { switch-preset-column-width; }
@@ -119,14 +123,15 @@ binds {
     Mod+W                               { toggle-column-tabbed-display; }
 
     // ─── Screenshots ───
-    Print                               { screenshot-screen; }
+    Print                               { spawn-sh "grim  - | tee \"$HOME/Pictures/Screenshots/$(date +'%Y-%m-%d_%H-%M-%S').png\" | wl-copy"; }
     Ctrl+Print                          { screenshot; }
+    Mod+Print                           { screenshot-screen; }
     Alt+Print                           { screenshot-window; }
 
     // ─── Emergency Escape Key ───
     // Use this when a fullscreen app blocks your keybinds.
     // It disables any active keyboard shortcut inhibitor, restoring control.
-    Mod+ESCAPE                          allow-inhibiting=false { toggle-keyboard-shortcuts-inhibit; }
+    Mod+Alt+Escape                      allow-inhibiting=false { toggle-keyboard-shortcuts-inhibit; }
 
     // ─── Exit / Power ───
     Ctrl+Alt+Delete                     { quit; } // Also quits Niri

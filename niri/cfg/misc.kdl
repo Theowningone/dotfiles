@@ -11,8 +11,9 @@
     }
 
     cursor {
-        xcursor-theme "capitaine-cursors"
-        xcursor-size 24
+        // xcursor-theme "capitaine-cursors"
+        xcursor-theme "Empty-Butterfly-White"
+        xcursor-size 20
     }
 
     debug {
